@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To-Do List - App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="blob-c">
+        <div class="shape-blob"></div>
+        <div class="shape-blob one"></div>
+        <div class="shape-blob two"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <h1>To-Do<span>Task</span></h1>
+            <p id="date-display"></p>
+        </header>
+
+        <section class="input-section">
+            <input type="text" id="todo-input" placeholder="What's your next move?" maxlength="40">
+            <button id="add-btn">Add<i class="ph ph-plus-bold"></i></button>
+        </section>
+
+        <ul id="todo-list">
+            </ul>
+        
+        <div class="stats">
+            <span id="task-count">0 tasks left</span>
+            <button id="clear-completed">Clear Finished</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
